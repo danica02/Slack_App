@@ -1,0 +1,31 @@
+.registration {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3f0e40;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  flex-direction: column;
+  font-family: var(--all-fonts);
+}
+
+.container_two {
+  position: relative;
+  width: 25vw;
+  height: 80vh;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+}
+
+@media (orientation: portrait) {
+  .container_two {
+    width: 85vw;
+    height: 95vh;
+  }
+}

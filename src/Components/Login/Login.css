@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+  background-color: #671769;
+}
+
+.container {
+  position: relative;
+  width: 25vw;
+  height: 70vh;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+}
+
+.brand-logo > img{
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #3f0e40;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 40px;
+  font-size: 12px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.container button, .container_two button{
+  color: white;
+  margin-top: 20px;
+  background: #3f0e40;
+  height: 2.5rem;
+  border-radius: 20px !important;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+.register {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.register > p > span{
+  color: #33c6f0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+@media (orientation: portrait) {
+  .container {
+    width: 85vw;
+    height: 85vh;
+    padding: 40px;
+  }
+
+  .brand-logo > img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .register {
+    font-size: 12px;
+  }
+  
+  input {
+    height: 50px;
+    font-size: 10px;
+  }
+}

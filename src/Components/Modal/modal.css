@@ -1,0 +1,206 @@
+.modal {
+  display: block !important;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000099;
+  padding-top: 6rem; 
+}
+
+.modal-content {
+  background-color: #FFF;
+  margin: 1.5% auto;
+  border: none;
+  width: 23%;
+  height: max-content; 
+  border-radius: 1rem; 
+}
+
+.modal-content > .titleWarning{
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal-content > .titleWarning > img{
+  width: 6vw;
+  padding-bottom: 3rem;
+}
+
+.modal-content > .footer{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  color: #FFF;
+  padding-bottom: 1.5rem;
+}
+
+.modal-content > .footer-success{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  color: #FFF;
+  padding-bottom: 1.5rem;
+}
+
+.footer > h1{
+  justify-content: center;
+  background-color: #ef513a;
+  padding: 0.5rem 7rem 0.5rem 7rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.footer-success > h1{
+  justify-content: center;
+  background-color: #54c147;
+  padding: 0.5rem 8rem 0.5rem 8rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.input-group-modal > p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+}
+
+.input-group-modal > h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+}
+
+.modal-content .input-group-modal:last-child {
+  margin-bottom: 0px !important; 
+}
+
+.input-group{
+  border: 0.3rem solid #3f0e40;
+  border-radius: 1rem;
+  height: max-content;
+}
+
+/* -- Modal Form --*/
+
+.form-box{
+	background: #FAFAFA;
+	border-radius: 1rem;
+  height: max-content;}
+
+.form-box > .form-title{
+  height: 5vh;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background-color: #3f0e40;
+  color: #FFF;
+  padding: 0.5rem;
+  font-size: 10px;}
+
+.form-box ul{
+	padding: 1rem;
+	list-style:none;}
+  
+.form-box ul li{
+	display: block;
+	margin-bottom: 10px;
+	height: 35px;}
+
+.field-style{
+	border: 1px solid #f0c0f1;}
+  
+.field-split{
+	width: 45%;}
+  
+button.align-left{
+	float:left;}
+
+button.align-right{
+	float:right;}
+
+.form-box ul li button:hover {
+	background-color: #7c1c7d;}
+
+.closoButton{
+  cursor: pointer;}
+
+.form-box > ul > li > input, button{
+  border-radius: 0.5rem !important;
+}
+
+.form-box > ul > li > button{
+  color: white;
+  margin-top: 20px;
+  background: #3f0e40;
+  height: 2.5rem;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+  border-radius: 0.5rem !important;
+}
+
+.addedHere{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+}
+
+.addButton {
+  color: white;
+  background: #ff6666;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0.2rem 0.5rem;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+  border-radius: 0.2rem !important;
+}
+
+.buttonWrap{
+  display: flex;
+  align-items: center;
+}
+
+@media (orientation: portrait) {
+  .modal-content {
+    width: 70%;
+  }
+
+  .modal-content > .titleWarning > img{
+    width: 25vw;
+    padding-bottom: 3rem;
+  }
+
+  .footer-success > h1{
+    justify-content: center;
+    background-color: #54c147;
+    padding: 0.5rem 6rem 0.5rem 6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+  }
+
+  .input-group-modal > h1{
+    font-size: 1.5rem;
+  }
+
+  .form-box ul li{
+    margin-bottom: 1.5rem;}
+
+  .form-box > ul > li > button{
+    font-size: 10px;}
+}
